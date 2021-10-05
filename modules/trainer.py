@@ -63,7 +63,6 @@ class Trainer():
             prob_lst.extend(pred[:, 1].cpu().tolist())
             target_lst.extend(label.cpu().tolist())
             pred_lst.extend(pred.argmax(dim=1).cpu().tolist())
-        print(batch_index)
         self.train_mean_loss = train_total_loss / batch_index
         self.train_score = self.metric_fn(y_pred=pred_lst, y_answer=target_lst, y_prob=prob_lst)
         msg = f'Epoch {epoch_index}, Train loss: {self.train_mean_loss}, Acc: {self.train_score}'
