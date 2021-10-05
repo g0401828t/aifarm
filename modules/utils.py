@@ -90,7 +90,7 @@ def get_logger(name: str, file_path: str, stream=False) -> logging.RootLogger:
 
     return logger
 
-def make_directory(directory: str) -> str:
+def make_directory(directory: str):
     """경로가 없으면 생성
     Args:
         directory (str): 새로 만들 경로

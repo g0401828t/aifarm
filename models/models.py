@@ -7,8 +7,9 @@ import pdb
 import timm
 
 
-def get_my_model(model_name, num_classes):
+def get_my_model(model_name, num_classes, checkpoint_path):
     model_type = None
+    checkpoint_path = ""
 
     if model_name == "vgg16":
         model_ft = models.vgg16(pretrained=True)
@@ -172,7 +173,7 @@ def get_my_model(model_name, num_classes):
         model_ft = timm.create_model('tf_efficientnetv2_s', pretrained=True, num_classes=num_classes)
 
     if model_name == "timm_tf_efficientnetv2_m":
-        model_ft = timm.create_model('tf_efficientnetv2_m', pretrained=True, num_classes=num_classes)
+        model_ft = timm.create_model('tf_efficientnetv2_m', pretrained=True, num_classes=num_classes, checkpoint_path=checkpoint_path)
 
     if model_name == "timm_tf_efficientnetv2_l":
         model_ft = timm.create_model('tf_efficientnetv2_l', pretrained=True, num_classes=num_classes)

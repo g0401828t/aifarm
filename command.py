@@ -17,17 +17,17 @@ class command():
 command_list = [
 ###
 
-"python train.py --yml train_config",
+"python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16
 
-"python train.py --yml train_config1",
+"python train.py --yml train_config1",  # timm_tf_efficientnetv2_l_f, bathsize 8
 
-"python train.py --yml train_config2",
+"python train.py --yml train_config2",  # timm_vit_base_patch16_224, bathsize 32
 
-"python train.py --yml train_config3",
+"python train.py --yml train_config3",  # timm_vit_base_patch16_224_in21k, bathsize 32
 
-"python train.py --yml train_config4",
+"python train.py --yml train_config4",  # timm_mixer_b16_224, bathsize 32
 
-"python train.py --yml train_config5",
+"python train.py --yml train_config5",  # timm_swin_base_patch4_window7_224, bathsize 16
 
 ###
 ]

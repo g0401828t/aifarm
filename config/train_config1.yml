@@ -9,9 +9,9 @@ DATALOADER:
 
 TRAIN:
   num_epochs: 100
-  batch_size: 16
+  batch_size: 8
   learning_rate: 1e-3
-  early_stopping_patience: 5
+  early_stopping_patience: 10
   model: "timm_tf_efficientnetv2_l_f"
   optimizer: "adam"
   scheduler: "plateu"

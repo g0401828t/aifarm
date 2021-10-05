@@ -9,10 +9,10 @@ DATALOADER:
 
 TRAIN:
   num_epochs: 100
-  batch_size: 16
+  batch_size: 32
   learning_rate: 1e-3
-  early_stopping_patience: 5
-  model: "timm_vit_large_patch16_224"
+  early_stopping_patience: 10
+  model: "timm_vit_base_patch16_224_in21k"
   optimizer: "adam"
   scheduler: "plateu"
   momentum:

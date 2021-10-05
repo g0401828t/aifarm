@@ -107,7 +107,8 @@ class TestDataset(Dataset):
                 ext = os.path.splitext(filename)[-1]
                 if ext == '.png':
                     image_path_list.append(os.path.join(path, filename))
-        image_path_list = sorted(image_path_list , key=lambda x : int(x.split('/')[-1].split('.')[0]))
+        # image_path_list = sorted(image_path_list , key=lambda x : int(x.split('/')[-1].split('.')[0]))
+        image_path_list = sorted(image_path_list , key=lambda x : int(x.split('\\')[-1].split('.')[0]))  # for windows
         db = pd.DataFrame({'img_path': image_path_list})
         return db
     
@@ -124,7 +125,9 @@ class TestDataset(Dataset):
 
         # 2. preprocessing images
         trans_image = self.transform(Image.fromarray(cvimg))
-        return trans_image, data['img_path'].split('/')[-1]
+        # return trans_image, data['img_path'].split('/')[-1]        
+        return trans_image, data['img_path'].split('\\')[-1]  # for windows
+
     
 class MyLazyDataset():
     def __init__(self, dataset, input_shape, mode="train"):
