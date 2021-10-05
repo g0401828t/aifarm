@@ -59,11 +59,11 @@ class Trainer():
             self.optimizer.step()
             train_total_loss += loss.item()
             # self.scheduler.step()
-            self.scheduler.step(train_total_loss)  # for plateu scheduler
             prob_lst.extend(pred[:, 1].cpu().tolist())
             target_lst.extend(label.cpu().tolist())
             pred_lst.extend(pred.argmax(dim=1).cpu().tolist())
         self.train_mean_loss = train_total_loss / batch_index
+        self.scheduler.step(train_mean_loss)  # for plateu scheduler
         self.train_score = self.metric_fn(y_pred=pred_lst, y_answer=target_lst, y_prob=prob_lst)
         msg = f'Epoch {epoch_index}, Train loss: {self.train_mean_loss}, Acc: {self.train_score}'
         print(msg)
