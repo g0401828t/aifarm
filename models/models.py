@@ -7,9 +7,8 @@ import pdb
 import timm
 
 
-def get_my_model(model_name, num_classes, checkpoint_path):
+def get_my_model(model_name, num_classes, checkpoint_path=""):
     model_type = None
-    checkpoint_path = ""
 
     if model_name == "vgg16":
         model_ft = models.vgg16(pretrained=True)
