@@ -16,6 +16,7 @@ from tqdm import tqdm
 from datetime import datetime, timezone, timedelta
 import numpy as np
 import pdb 
+import argparse
 
 import torch
 import torch.nn as nn
@@ -31,6 +32,10 @@ from modules.earlystoppers import LossEarlyStopper
 from modules.recorders import PerformanceRecorder
 from models.models import *
 
+parser = argparse.ArgumentParser(description="resnet_teacher")
+parser.add_argument("--yml", default="train_config", type=str, help='yml file') 
+args = parser.parse_args()
+
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 # DEBUG
@@ -40,7 +45,7 @@ DEBUG = False
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_PROJECT_DIR = os.path.dirname(PROJECT_DIR)
 DATA_DIR = '../data'
-TRAIN_CONFIG_PATH = os.path.join(PROJECT_DIR, 'config/train_config.yml')
+TRAIN_CONFIG_PATH = os.path.join(PROJECT_DIR, 'config/', args.yml + '.yml')
 config = load_yaml(TRAIN_CONFIG_PATH)
 
 # SEED
@@ -148,8 +153,6 @@ if __name__ == '__main__':
 
     ## Loss function
     if LOSS_FN == "ce":
-        _, class_ = train_dataset.data_loader()
-        print(class_)
         criterion = nn.CrossEntropyLoss()
     if LOSS_FN == "w_ce":
         _, num_imgs_class  = train_dataset.data_loader()

@@ -110,6 +110,7 @@ class PerformanceRecorder():
         # Update scheduler learning rate
         # learning_rate = self.scheduler.get_last_lr()[0]
         learning_rate = self.optimizer.param_groups[0]['lr']
+        print("lr:", learning_rate)
         row[9] = learning_rate
 
         with open(self.record_filepath, newline='', mode='a') as f:
@@ -152,7 +153,7 @@ class PerformanceRecorder():
         msg = f"Save best record {self.best_record_filepath}"
         self.logger.info(msg) if self.logger else None
 
-    def save_weight(self)-> None:
+    def save_weight(self):
         """Weight 저장
 
         Args:

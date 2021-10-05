@@ -1,0 +1,43 @@
+SEED:
+  random_seed: 42
+
+DATALOADER:
+  num_workers: 8
+  shuffle: True
+  pin_memory: True
+  drop_last: False
+
+TRAIN:
+  num_epochs: 100
+  batch_size: 16
+  learning_rate: 1e-3
+  early_stopping_patience: 5
+  model: "timm_tf_efficientnetv2_m"
+  optimizer: "adam"
+  scheduler: "plateu"
+  momentum:
+  weight_decay: 0.00005
+  loss_function: "w_ce"
+  metric_function:
+
+
+PERFORMANCE_RECORD:
+  column_list:
+    - train_serial
+    - train_timestamp
+    - model_str
+    - optimizer_str
+    - loss_function_str
+    - metric_function_str
+    - early_stopping_patience
+    - batch_size
+    - epoch
+    - learning_rate
+    - momentum
+    - random_seed # -----------key columns-------------
+    - epoch_index 
+    - train_loss
+    - validation_loss
+    - train_score
+    - validation_score
+    - elapsed_time

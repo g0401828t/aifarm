@@ -55,6 +55,7 @@ class LossEarlyStopper():
         elif loss > self.min_loss:
             self.patience_counter += 1
             msg = f"Early stopper, Early stopping counter {self.patience_counter}/{self.patience}"
+            print(msg)
 
             if self.patience_counter == self.patience:
                 self.stop = True
@@ -65,6 +66,7 @@ class LossEarlyStopper():
         elif loss <= self.min_loss:
             self.save_model = True
             msg = f"Early stopper, Validation loss decreased {self.min_loss} -> {loss}"
+            print(msg)
             self.min_loss = loss
             # self.save_checkpoint(loss=loss, model=model)
 
