@@ -17,17 +17,28 @@ class command():
 command_list = [
 ###
 
-"python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16
+## Done
+# "python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16 => pub test: 97.19
 
-"python train.py --yml train_config1",  # timm_tf_efficientnetv2_l_f, bathsize 8
+## Progress
+"python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16 => pub test: 97.19
 
-"python train.py --yml train_config2",  # timm_vit_base_patch16_224, bathsize 32
 
-"python train.py --yml train_config3",  # timm_vit_base_patch16_224_in21k, bathsize 32
+## not yet
+# "python train.py --yml train_config1",  # tf_efficientnet_l2_ns_475, bathsize 2
 
-"python train.py --yml train_config4",  # timm_mixer_b16_224, bathsize 32
+# "python train.py --yml train_config2",  # swin_large_patch4_window12_384, bathsize 16
 
-"python train.py --yml train_config5",  # timm_swin_base_patch4_window7_224, bathsize 16
+# "python train.py --yml train_config3",  # vit_large_patch16_384, bathsize 32
+
+# "python train.py --yml train_config4",  # cait_m48_448, bathsize 32
+
+# "python train.py --yml train_config5",  # cait_m48_448, bathsize 32
+
+# "python train.py --yml train_config5",  # tf_efficientnetv2_l_in21ft1k, bathsize 32
+
+# "python train.py --yml train_config5",  # tf_efficientnetv2_m_in21ft1k, bathsize 32
+
 
 ###
 ]

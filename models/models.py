@@ -10,6 +10,31 @@ import timm
 def get_my_model(model_name, num_classes, checkpoint_path=""):
     model_type = None
 
+
+
+    # fot ai_connect
+    if model_name == "tf_efficientnet_l2_ns_475":
+        model_ft = timm.create_model('tf_efficientnet_l2_ns_475', pretrained=True, num_classes=num_classes)
+
+    if model_name == "swin_large_patch4_window12_384":
+        model_ft = timm.create_model('swin_large_patch4_window12_384', pretrained=True, num_classes=num_classes)
+
+    if model_name == "vit_large_patch16_384":
+        model_ft = timm.create_model('vit_large_patch16_384', pretrained=True, num_classes=num_classes)
+
+    if model_name == "cait_m48_448":
+        model_ft = timm.create_model('cait_m48_448', pretrained=True, num_classes=num_classes)
+        
+    if model_name == "tf_efficientnetv2_l_in21ft1k":
+        model_ft = timm.create_model('tf_efficientnetv2_l_in21ft1k', pretrained=True, num_classes=num_classes)
+
+    if model_name == "tf_efficientnetv2_m_in21ft1k":
+        model_ft = timm.create_model('tf_efficientnetv2_m_in21ft1k', pretrained=True, num_classes=num_classes)
+    
+    
+
+
+    ########
     if model_name == "vgg16":
         model_ft = models.vgg16(pretrained=True)
         model_type = "vgg"
@@ -215,6 +240,8 @@ def get_my_model(model_name, num_classes, checkpoint_path=""):
 
     if model_name == "timm_swin_large_patch4_window7_224_f":
         model_ft = timm.create_model('swin_large_patch4_window7_224', pretrained=False, num_classes=num_classes)
+
+
 
 
     # last fc configuration

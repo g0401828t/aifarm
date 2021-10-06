@@ -8,11 +8,12 @@ DATALOADER:
   drop_last: False
 
 TRAIN:
+  input_shape: 480
   num_epochs: 100
   batch_size: 16
   learning_rate: 1e-3
   early_stopping_patience: 10
-  model: "timm_swin_base_patch4_window7_224"
+  model: "tf_efficientnetv2_l_in21ft1k"
   optimizer: "adam"
   scheduler: "plateu"
   momentum:

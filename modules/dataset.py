@@ -133,13 +133,20 @@ class MyLazyDataset():
     def __init__(self, dataset, input_shape, mode="train"):
         self.dataset = dataset
         self.input_shape = input_shape
+        self.resize_shape = tuple(elem+32 for elem in self.input_shape)
 
         norm_mean = [0.485, 0.456, 0.406]
         norm_std = [0.229, 0.224, 0.225]
         if mode == "train":
             self.transform = transforms.Compose([
-                transforms.Resize((256,256)),
+                transforms.Resize(self.resize_shape),
+                transforms.RandomApply(torch.nn.ModuleList([
+                                                            transforms.ColorJitter(),
+                                                            transforms.GaussianBlur(3)
+                                                        ]), p=0.3),
+                transforms.RandomRotation(degrees=180),
                 transforms.RandomHorizontalFlip(p=0.5),
+                transforms.RandomVerticalFlip(p=0.5),
                 transforms.RandomCrop(self.input_shape),
                 transforms.ToTensor(),
                 transforms.Normalize(norm_mean, norm_std),

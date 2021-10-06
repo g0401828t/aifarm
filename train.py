@@ -24,7 +24,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import transforms
 
-from modules.metrics import get_metric_fn
+from modules.metrics import get_metric_fn, FocalLoss
 from modules.dataset import CustomDataset , TestDataset, MyLazyDataset
 from modules.trainer import Trainer
 from modules.utils import load_yaml, save_yaml, get_logger, make_directory
@@ -63,7 +63,8 @@ MOMENTUM = config['TRAIN']['momentum']
 WEIGHT_DECAY = config['TRAIN']['weight_decay']
 LOSS_FN = config['TRAIN']['loss_function']
 METRIC_FN = config['TRAIN']['metric_function']
-INPUT_SHAPE = (224, 224)
+INPUT_SHAPE = config['TRAIN']['input_shape']
+INPUT_SHAPE = tuple((INPUT_SHAPE,INPUT_SHAPE))
 
 # TRAIN SERIAL
 KST = timezone(timedelta(hours=9))
@@ -171,6 +172,20 @@ if __name__ == '__main__':
         # class_weights = 1.0 /class_percentage
         # class_weights = class_weights / class_weights.sum()
         criterion = nn.CrossEntropyLoss(weight=class_weights)
+    if LOSS_FN == "focal_loss":
+        criterion = FocalLoss(alpha=1, gamma=2, reduce=True)
+    if LOSS_FN == "w_focal_loss":
+        _, num_imgs_class  = train_dataset.data_loader()
+        num_imgs_class = torch.FloatTensor(num_imgs_class)
+        print("num of imgs for classes:", num_imgs_class)
+        class_percentage = num_imgs_class / num_imgs_class.sum()
+        class_weights = 1.0 /class_percentage
+        class_weights = (class_weights / class_weights.sum())
+        class_weights = torch.exp(class_weights)
+        class_weights = class_weights.to(device)
+        print("weights for classes:", class_weights)
+        criterion = FocalLoss(alpha=1, gamma=2, weight=class_weights, reduce=True)
+
 
     ## Metric Function
     metric_fn = get_metric_fn
@@ -213,6 +228,12 @@ if __name__ == '__main__':
 
         trainer.train_epoch(train_dataloader, epoch_index)
         trainer.validate_epoch(validation_dataloader, epoch_index, 'val')
+        scheduler.step(trainer.train_mean_loss)  # for plateu scheduler
+        
+        for param_group in optimizer.param_groups:  # to see the learning rate per epoch
+            current_lr =  param_group['lr']
+        print("current_lr", current_lr)
+        print("current_lr", optimizer.param_groups[0]['lr'])
 
         # Performance record - csv & save elapsed_time
         performance_recorder.add_row(epoch_index=epoch_index,

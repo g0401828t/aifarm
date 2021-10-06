@@ -1,8 +1,8 @@
 DIRECTORY:
   data: '../data/test'
-  model: "./results/train/timm_tf_efficientnetv2_m_20211005235053/best.pt"
+  model: "./results/train/timm_tf_efficientnetv2_m_20211006034631" 
 
-MODEL: "timm_swin_base_patch4_window7_224"
+MODEL: "timm_tf_efficientnetv2_m"
 
 DATALOADER:
   num_workers:

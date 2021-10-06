@@ -37,7 +37,7 @@ config = load_yaml(PREDICT_CONFIG_PATH)
 
 DATA_DIR = config['DIRECTORY']['data']
 MODEL = config['MODEL']
-TRAINED_MODEL_PATH = config['DIRECTORY']['model']
+TRAINED_MODEL_PATH = config['DIRECTORY']['model'] + "/best.pt"
 
 # SEED
 RANDOM_SEED = config['SEED']['random_seed']
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     torch.backends.cudnn.benchmark = False
     np.random.seed(RANDOM_SEED)
     random.seed(RANDOM_SEED)
-    SAVE_PATH = 'pred.csv'
+    SAVE_PATH = config['DIRECTORY']['model'] + '/pred.csv'
 
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -70,8 +70,8 @@ if __name__ == '__main__':
 
 
     # Load Model
-    model = get_my_model(model_name=MODEL, num_classes = 10, checkpoint_path=TRAINED_MODEL_PATH).to(device)
-    # model.load_state_dict(torch.load(TRAINED_MODEL_PATH)['model'])
+    model = get_my_model(model_name=MODEL, num_classes = 10, checkpoint_path="").to(device)
+    model.load_state_dict(torch.load(TRAINED_MODEL_PATH)['model'])
 
     pred_lst = []
     file_name_lst = []
