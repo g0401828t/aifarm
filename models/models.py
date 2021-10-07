@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from torchvision import models
-from efficientnet_pytorch import EfficientNet
+# from efficientnet_pytorch import EfficientNet
 # from vit_pytorch import ViT
 import pdb
 import timm
@@ -35,133 +35,133 @@ def get_my_model(model_name, num_classes, checkpoint_path=""):
     
 
 
-    ########
-    if model_name == "vgg16":
-        model_ft = models.vgg16(pretrained=True)
-        model_type = "vgg"
+    # ########
+    # if model_name == "vgg16":
+    #     model_ft = models.vgg16(pretrained=True)
+    #     model_type = "vgg"
 
-    if model_name == "vgg16_f":
-        model_ft = models.vgg16(pretrained=False)
-        model_type = "vgg"
+    # if model_name == "vgg16_f":
+    #     model_ft = models.vgg16(pretrained=False)
+    #     model_type = "vgg"
 
-    if model_name == "resnet18":
-        model_ft = models.resnet18(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnet18":
+    #     model_ft = models.resnet18(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "my_resnet18_mp":
-        model_ft = models.resnet18(pretrained=True)
-        model_type = "res"
+    # if model_name == "my_resnet18_mp":
+    #     model_ft = models.resnet18(pretrained=True)
+    #     model_type = "res"
 
-        model_ft.maxpool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)  # padding -1
+    #     model_ft.maxpool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)  # padding -1
 
-    if model_name == "resnet18_f":
-        model_ft = models.resnet18(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnet18_f":
+    #     model_ft = models.resnet18(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnet34":
-        model_ft = models.resnet34(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnet34":
+    #     model_ft = models.resnet34(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "resnet34_f":
-        model_ft = models.resnet34(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnet34_f":
+    #     model_ft = models.resnet34(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnet50":
-        model_ft = models.resnet50(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnet50":
+    #     model_ft = models.resnet50(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "resnet50_f":
-        model_ft = models.resnet50(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnet50_f":
+    #     model_ft = models.resnet50(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnet101":
-        model_ft = models.resnet101(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnet101":
+    #     model_ft = models.resnet101(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "resnet101_f":
-        model_ft = models.resnet101(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnet101_f":
+    #     model_ft = models.resnet101(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnet152":
-        model_ft = models.resnet152(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnet152":
+    #     model_ft = models.resnet152(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "my_resnet152_mp":
-        model_ft = models.resnet152(pretrained=True)
-        model_type = "res"
-        model_ft.maxpool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)  # padding -1
+    # if model_name == "my_resnet152_mp":
+    #     model_ft = models.resnet152(pretrained=True)
+    #     model_type = "res"
+    #     model_ft.maxpool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)  # padding -1
 
-    if model_name == "resnet152_f":
-        model_ft = models.resnet152(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnet152_f":
+    #     model_ft = models.resnet152(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "wide_resnet50_2":
-        model_ft = models.wide_resnet50_2(pretrained=True)
-        model_type = "res"
+    # if model_name == "wide_resnet50_2":
+    #     model_ft = models.wide_resnet50_2(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "wide_resnet50_2_f":
-        model_ft = models.wide_resnet50_2(pretrained=False)
-        model_type = "res"
+    # if model_name == "wide_resnet50_2_f":
+    #     model_ft = models.wide_resnet50_2(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "wide_resnet101_2":
-        model_ft = models.wide_resnet101_2(pretrained=True)
-        model_type = "res"
+    # if model_name == "wide_resnet101_2":
+    #     model_ft = models.wide_resnet101_2(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "wide_resnet101_2_f":
-        model_ft = models.wide_resnet101_2(pretrained=False)
-        model_type = "res"
+    # if model_name == "wide_resnet101_2_f":
+    #     model_ft = models.wide_resnet101_2(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnext50_32x4d":
-        model_ft = models.resnext50_32x4d(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnext50_32x4d":
+    #     model_ft = models.resnext50_32x4d(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "resnext50_32x4d_f":
-        model_ft = models.resnext50_32x4d(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnext50_32x4d_f":
+    #     model_ft = models.resnext50_32x4d(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "resnext101_32x8d":
-        model_ft = models.resnext101_32x8d(pretrained=True)
-        model_type = "res"
+    # if model_name == "resnext101_32x8d":
+    #     model_ft = models.resnext101_32x8d(pretrained=True)
+    #     model_type = "res"
 
-    if model_name == "resnext101_32x8d_f":
-        model_ft = models.resnext101_32x8d(pretrained=False)
-        model_type = "res"
+    # if model_name == "resnext101_32x8d_f":
+    #     model_ft = models.resnext101_32x8d(pretrained=False)
+    #     model_type = "res"
 
-    if model_name == "eff_b0":
-        model_ft = EfficientNet.from_pretrained('efficientnet-b0', num_classes=num_classes)
-        model_type = "eff"
+    # if model_name == "eff_b0":
+    #     model_ft = EfficientNet.from_pretrained('efficientnet-b0', num_classes=num_classes)
+    #     model_type = "eff"
 
-    if model_name == "eff_b2":
-        model_ft = EfficientNet.from_pretrained('efficientnet-b2', num_classes=num_classes)
-        model_type = "eff"
+    # if model_name == "eff_b2":
+    #     model_ft = EfficientNet.from_pretrained('efficientnet-b2', num_classes=num_classes)
+    #     model_type = "eff"
 
-    if model_name == "eff_b4":
-        model_ft = EfficientNet.from_pretrained('efficientnet-b4', num_classes=num_classes)
-        model_type = "eff"
+    # if model_name == "eff_b4":
+    #     model_ft = EfficientNet.from_pretrained('efficientnet-b4', num_classes=num_classes)
+    #     model_type = "eff"
 
-    if model_name == "eff_b6":
-        model_ft = EfficientNet.from_pretrained('efficientnet-b6', num_classes=num_classes)
-        model_type = "eff"
+    # if model_name == "eff_b6":
+    #     model_ft = EfficientNet.from_pretrained('efficientnet-b6', num_classes=num_classes)
+    #     model_type = "eff"
 
-    if model_name == "eff_b7":
-        model_ft = EfficientNet.from_pretrained('efficientnet-b7')
-        model_type = "eff"
+    # if model_name == "eff_b7":
+    #     model_ft = EfficientNet.from_pretrained('efficientnet-b7')
+    #     model_type = "eff"
 
-    if model_name == "densenet121":
-        model_ft = models.densenet121(pretrained=True)
-        model_type = "den"
+    # if model_name == "densenet121":
+    #     model_ft = models.densenet121(pretrained=True)
+    #     model_type = "den"
 
-    if model_name == "densenet121_f":
-        model_ft = models.densenet121(pretrained=False)
-        model_type = "den"
+    # if model_name == "densenet121_f":
+    #     model_ft = models.densenet121(pretrained=False)
+    #     model_type = "den"
 
-    if model_name == "densenet201_f":
-        model_ft = models.densenet201(pretrained=False)
-        model_type = "den"
+    # if model_name == "densenet201_f":
+    #     model_ft = models.densenet201(pretrained=False)
+    #     model_type = "den"
 
-    if model_name == "mnasnet1_0":
-        model_ft = models.mnasnet1_0(pretrained=True)
-        model_type = "mnas"
+    # if model_name == "mnasnet1_0":
+    #     model_ft = models.mnasnet1_0(pretrained=True)
+    #     model_type = "mnas"
 
 
 
