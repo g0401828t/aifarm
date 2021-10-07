@@ -67,7 +67,7 @@ if __name__ == '__main__':
     np.random.seed(RANDOM_SEED)
     random.seed(RANDOM_SEED)
     # SAVE_PATH = config['DIRECTORY']['model'] + '/pred.csv'  # for single model
-    SAVE_PATH = '.results/pred/multi_pred_final.csv'  # for multi model ensemble
+    SAVE_PATH = './results/pred/pred_final.csv'  # for multi model ensemble
 
     # Set device
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
