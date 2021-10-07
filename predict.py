@@ -46,7 +46,7 @@ model_list, model_path_list = [], []
 for model in config['MODEL'].split():
     model_list.append(model)
 for model_path in config['DIRECTORY']['model'].split():
-    model_path_list.append("./results/train/done/" + model_path + "/best.pt")
+    model_path_list.append("./results/train/best/" + model_path + "/best.pt")
 # print(model_list, model_path_list)
 
 
