@@ -5,7 +5,7 @@
    - Cross Etropy Loss
    - Cross Etropy Loss
    - Focal Loss
-- Best models trianed with coressponding config files
+- Top 5 models trianed with coressponding config files
 1. tf_efficientnetv2_l_in21ft1k => train_config_best1
 2. tf_efficientnetv2_m_in21ft1k => train_config_best2
 3. tf_efficientnet_b6_ns => train_config4
@@ -35,6 +35,22 @@
 ## Train Process
 ```
 python command.py
+```
+<command.py>
+```
+...
+
+command_list = [
+###
+
+## Best
+"python train.py --yml train_config_best1",  # tf_efficientnetv2_m_in21ft1k, bathsize 32 => pub test: 99.03
+"python train.py --yml train_config_best2",  # tf_efficientnetv2_l_in21ft1k, bathsize 16 => pub test: 99.22
+
+###
+]
+
+...
 ```
 ## Example Config File (for model: tf_efficientnetv2_m_in21ft1k)
 ```
