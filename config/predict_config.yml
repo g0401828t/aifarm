@@ -1,8 +1,8 @@
 DIRECTORY:
   data: '../data/test'
-  model: "tf_efficientnetv2_m_in21ft1k_20211006215437" 
+  model: "tf_efficientnetv2_l_in21ft1k_20211007123012" 
 
-MODEL: "tf_efficientnetv2_m_in21ft1k"
+MODEL: "tf_efficientnetv2_l_in21ft1k"
 
 DATALOADER:
   num_workers:
