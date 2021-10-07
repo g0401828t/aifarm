@@ -183,7 +183,7 @@ PERFORMANCE_RECORD:
 
 
 
-## Test Process
+## Test Process.
 ### modify <predict.py> for tf_efficientnetv2_l_in21ft1k 
 ```
 DIRECTORY:
@@ -201,7 +201,7 @@ DIRECTORY:
 
 MODEL: "tf_efficientnetv2_m_in21ft1k"
 ```
-
+### Run Prediction (TEST)
 ```
 python predict.py
 ```
@@ -209,3 +209,7 @@ python predict.py
 ## Top 2 Trained Model Weight File Directory
 ./results/train/best/tf_efficientnetv2_l_in21ft1k_20211007123012/best.pt
 ./results/train/best/tf_efficientnetv2_m_in21ft1k_20211006215437/best.pt
+
+## Top 2 Trained Model Prediction File Directory
+./results/pred/pred_tf_efficientnetv2_l_in21ft1k_20211007123012.csv
+./results/pred/pred_tf_efficientnetv2_m_in21ft1k_20211006215437.csv
