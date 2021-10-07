@@ -1,18 +1,20 @@
-# aifarm
-- implemented with base_line code
-- with modified Cross Etropy Loss
-   - Cross Etropy Loss
-   - Cross Etropy Loss
-   - Cross Etropy Loss
-   - Focal Loss
-- Top 5 models trianed with coressponding config files
-1. tf_efficientnetv2_l_in21ft1k => train_config_best1
-2. tf_efficientnetv2_m_in21ft1k => train_config_best2
-3. tf_efficientnet_b6_ns => train_config4
-4. tf_efficientnetv2_l_in21ft1k => train_config2
-5. swin_large_patch4_window7_224 => train_config3
+# aifarm (소달구지)
 
-## Directory
+## Implementation Details.
+- Implemented with base_line code
+- Used Modified Cross Etropy Loss
+   - Cross Entropy Loss (ce)
+   - Weight Cross Etropy Loss (w_ce)
+   - Focal Loss(focal_loss)
+   - Weight Focal Loss (w_focal_loss)  <= Mainly Used
+- Top 5 Models Trained with corresponding Config Files.
+   - tf_efficientnetv2_l_in21ft1k => train_config_best1
+   - tf_efficientnetv2_m_in21ft1k => train_config_best2
+   - tf_efficientnet_b6_ns => train_config4
+   - tf_efficientnetv2_l_in21ft1k => train_config2
+   - swin_large_patch4_window7_224 => train_config3
+
+## Directory.
 ```bash
 ├── project_folder
 │   ├── config
