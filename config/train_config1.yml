@@ -8,17 +8,17 @@ DATALOADER:
   drop_last: False
 
 TRAIN:
-  input_shape: 475
-  num_epochs: 100
-  batch_size: 2
-  learning_rate: 1e-3
-  early_stopping_patience: 10
-  model: "tf_efficientnet_l2_ns_475"
+  input_shape: 224
+  num_epochs: 50
+  batch_size: 16
+  learning_rate: 1e-4
+  early_stopping_patience: 6
+  model: "tf_efficientnetv2_m_in21ft1k"
   optimizer: "adam"
   scheduler: "plateu"
   momentum:
   weight_decay: 0.00005
-  loss_function: "w_focal_loss"
+  loss_function: "ce"
   metric_function:
 
 

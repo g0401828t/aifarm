@@ -1,8 +1,8 @@
 DIRECTORY:
   data: '../data/test'
-  model: "./results/train/timm_tf_efficientnetv2_m_20211006034631" 
+  model: "tf_efficientnetv2_l_in21ft1k_20211007123012" 
 
-MODEL: "timm_tf_efficientnetv2_m"
+MODEL: "tf_efficientnetv2_l_in21ft1k"
 
 DATALOADER:
   num_workers:
@@ -18,3 +18,8 @@ PREDICT:
   batch_size: 64
 
 
+# tf_efficientnetv2_l_in21ft1k_20211007033742  9971139971139971  993869455463397
+# tf_efficientnet_b6_ns_20211007004927         9978354978354979  993869455463397
+
+# tf_efficientnetv2_l_in21ft1k_20211007123012   9999098124098124 997836278398846
+# tf_efficientnetv2_m_in21ft1k_20211006215437   999549062049062  994590695997115

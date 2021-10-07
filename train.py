@@ -138,17 +138,21 @@ if __name__ == '__main__':
     ## Scheduler
     if SCHEDULER == "msl":
         hp_lr_decay_ratio = 0.2
-        scheduler = lr_scheduler.MultiStepLR(
+        scheduler = optim.lr_scheduler.MultiStepLR(
             optimizer,
             milestones=[
-                args.hp_ep * 0.3,
-                args.hp_ep * 0.6,
-                args.hp_ep * 0.8,
+                EPOCHS * 0.2,
+                EPOCHS * 0.4,
+                EPOCHS * 0.6,
+                EPOCHS * 0.8,
+                # EPOCHS * 0.3,
+                # EPOCHS * 0.6,
+                # EPOCHS * 0.8,
             ],
             gamma=hp_lr_decay_ratio,
         )
     if SCHEDULER == "cos":
-        scheduler = lr_scheduler.CosineAnnealingLR(optimizer, T_max=args.hp_ep)
+        scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=EPOCHS)
     if SCHEDULER == "plateu":
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", patience=5, factor=0.5)
 
@@ -228,7 +232,8 @@ if __name__ == '__main__':
 
         trainer.train_epoch(train_dataloader, epoch_index)
         trainer.validate_epoch(validation_dataloader, epoch_index, 'val')
-        scheduler.step(trainer.train_mean_loss)  # for plateu scheduler
+        scheduler.step()
+        # scheduler.step(trainer.train_mean_loss)  # for plateu scheduler
         
         for param_group in optimizer.param_groups:  # to see the learning rate per epoch
             current_lr =  param_group['lr']

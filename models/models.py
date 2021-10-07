@@ -13,17 +13,18 @@ def get_my_model(model_name, num_classes, checkpoint_path=""):
 
 
     # fot ai_connect
-    if model_name == "tf_efficientnet_l2_ns_475":
-        model_ft = timm.create_model('tf_efficientnet_l2_ns_475', pretrained=True, num_classes=num_classes)
-
-    if model_name == "swin_large_patch4_window12_384":
-        model_ft = timm.create_model('swin_large_patch4_window12_384', pretrained=True, num_classes=num_classes)
-
+    # large image
     if model_name == "vit_large_patch16_384":
         model_ft = timm.create_model('vit_large_patch16_384', pretrained=True, num_classes=num_classes)
 
-    if model_name == "cait_m48_448":
-        model_ft = timm.create_model('cait_m48_448', pretrained=True, num_classes=num_classes)
+    if model_name == "cait_s24_384":
+        model_ft = timm.create_model('cait_s24_384', pretrained=True, num_classes=num_classes)
+    # 224
+    if model_name == "tf_efficientnet_b6_ns":
+        model_ft = timm.create_model('tf_efficientnet_b6_ns', pretrained=True, num_classes=num_classes)
+
+    if model_name == "swin_large_patch4_window7_224":
+        model_ft = timm.create_model('swin_large_patch4_window7_224', pretrained=True, num_classes=num_classes)
         
     if model_name == "tf_efficientnetv2_l_in21ft1k":
         model_ft = timm.create_model('tf_efficientnetv2_l_in21ft1k', pretrained=True, num_classes=num_classes)

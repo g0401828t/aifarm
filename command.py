@@ -19,25 +19,22 @@ command_list = [
 
 ## Done
 # "python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16 => pub test: 97.19
+# "python train.py --yml train_config1",  # tf_efficientnetv2_m_in21ft1k, bathsize 16, w_focal_loss => dg
 
 ## Progress
-"python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16 => pub test: 97.19
+
+# "python train.py --yml train_config4",  # tf_efficientnet_b6_ns, bathsize 16  ==> 99.xx
+
+# "python train.py --yml train_config2",  # tf_efficientnetv2_l_in21ft1k, bathsize 8  ==> 99.xx
+
+# "python train.py --yml train_config3",  # swin_large_patch4_window7_224, bathsize 8  => 97.xx
+
 
 
 ## not yet
-# "python train.py --yml train_config1",  # tf_efficientnet_l2_ns_475, bathsize 2
 
-# "python train.py --yml train_config2",  # swin_large_patch4_window12_384, bathsize 16
+# "python train.py --yml train_config5",  # cait_s24_384, bathsize 8 => too large
 
-# "python train.py --yml train_config3",  # vit_large_patch16_384, bathsize 32
-
-# "python train.py --yml train_config4",  # cait_m48_448, bathsize 32
-
-# "python train.py --yml train_config5",  # cait_m48_448, bathsize 32
-
-# "python train.py --yml train_config5",  # tf_efficientnetv2_l_in21ft1k, bathsize 32
-
-# "python train.py --yml train_config5",  # tf_efficientnetv2_m_in21ft1k, bathsize 32
 
 
 ###

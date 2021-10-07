@@ -8,17 +8,17 @@ DATALOADER:
   drop_last: False
 
 TRAIN:
-  input_shape: 384
-  num_epochs: 100
-  batch_size: 32
-  learning_rate: 1e-3
-  early_stopping_patience: 10
-  model: "vit_large_patch16_384"
+  input_shape: 224
+  num_epochs: 50
+  batch_size: 8
+  learning_rate: 1e-4
+  early_stopping_patience: 6
+  model: "swin_large_patch4_window7_224"
   optimizer: "adam"
-  scheduler: "plateu"
+  scheduler: "msl"
   momentum:
   weight_decay: 0.00005
-  loss_function: "w_ce"
+  loss_function: "w_focal_loss"
   metric_function:
 
 

@@ -8,14 +8,14 @@ DATALOADER:
   drop_last: False
 
 TRAIN:
-  input_shape: 448
-  num_epochs: 100
-  batch_size: 32
-  learning_rate: 1e-3
-  early_stopping_patience: 10
-  model: "cait_m48_448"
+  input_shape: 224
+  num_epochs: 50
+  batch_size: 16
+  learning_rate: 1e-4
+  early_stopping_patience: 6
+  model: "tf_efficientnet_b6_ns"
   optimizer: "adam"
-  scheduler: "plateu"
+  scheduler: "msl"
   momentum:
   weight_decay: 0.00005
   loss_function: "w_ce"
