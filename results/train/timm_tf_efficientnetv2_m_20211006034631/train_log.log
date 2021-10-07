@@ -1,0 +1,158 @@
+2021-10-06 03:56:11,992 | train | INFO | Write row 0
+2021-10-06 03:56:13,711 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\model.pt
+2021-10-06 03:56:13,712 | train | INFO | Update best record row 1, checkpoints inf -> 0.15099974471612732
+2021-10-06 03:56:14,774 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 03:56:16,348 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:05:38,452 | train | INFO | Write row 1
+2021-10-06 04:05:39,210 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:05:39,212 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 04:14:54,110 | train | INFO | Write row 2
+2021-10-06 04:14:54,916 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:14:54,916 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 04:24:09,824 | train | INFO | Write row 3
+2021-10-06 04:24:11,486 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:24:11,487 | train | INFO | Update best record row 4, checkpoints 0.15099974471612732 -> 0.14479976310529288
+2021-10-06 04:24:12,234 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:24:12,235 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.15099974471612732 -> 0.14479976310529288
+2021-10-06 04:24:13,853 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:33:34,340 | train | INFO | Write row 4
+2021-10-06 04:33:35,988 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:33:35,989 | train | INFO | Update best record row 5, checkpoints 0.14479976310529288 -> 0.11134383450477583
+2021-10-06 04:33:36,733 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:33:36,734 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.14479976310529288 -> 0.11134383450477583
+2021-10-06 04:33:38,417 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:42:52,530 | train | INFO | Write row 5
+2021-10-06 04:42:54,260 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:42:54,261 | train | INFO | Update best record row 6, checkpoints 0.11134383450477583 -> 0.08197430291548209
+2021-10-06 04:42:54,996 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:42:54,996 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.11134383450477583 -> 0.08197430291548209
+2021-10-06 04:42:56,675 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 04:52:10,421 | train | INFO | Write row 6
+2021-10-06 04:52:11,192 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 04:52:11,193 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 05:01:25,551 | train | INFO | Write row 7
+2021-10-06 05:01:26,384 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:01:26,385 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 05:10:42,350 | train | INFO | Write row 8
+2021-10-06 05:10:43,950 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 05:10:43,951 | train | INFO | Update best record row 9, checkpoints 0.08197430291548209 -> 0.07426984666229625
+2021-10-06 05:10:44,764 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:10:44,765 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.08197430291548209 -> 0.07426984666229625
+2021-10-06 05:10:46,429 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 05:20:03,147 | train | INFO | Write row 9
+2021-10-06 05:20:03,891 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:20:03,892 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 05:29:17,176 | train | INFO | Write row 10
+2021-10-06 05:29:17,973 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:29:17,974 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 05:38:36,055 | train | INFO | Write row 11
+2021-10-06 05:38:36,803 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:38:36,803 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 05:47:48,518 | train | INFO | Write row 12
+2021-10-06 05:47:49,282 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:47:49,283 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 05:57:04,098 | train | INFO | Write row 13
+2021-10-06 05:57:04,863 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 05:57:04,864 | train | INFO | Early stopper, Early stopping counter 5/10
+2021-10-06 06:06:21,218 | train | INFO | Write row 14
+2021-10-06 06:06:22,900 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 06:06:22,901 | train | INFO | Update best record row 15, checkpoints 0.07426984666229625 -> 0.06555629438620378
+2021-10-06 06:06:23,649 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:06:23,649 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.07426984666229625 -> 0.06555629438620378
+2021-10-06 06:06:25,290 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 06:15:40,143 | train | INFO | Write row 15
+2021-10-06 06:15:41,791 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 06:15:41,791 | train | INFO | Update best record row 16, checkpoints 0.06555629438620378 -> 0.059426374322966255
+2021-10-06 06:15:42,573 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:15:42,573 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.06555629438620378 -> 0.059426374322966255
+2021-10-06 06:15:44,307 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 06:25:00,559 | train | INFO | Write row 16
+2021-10-06 06:25:01,315 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:25:01,315 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 06:34:15,659 | train | INFO | Write row 17
+2021-10-06 06:34:16,448 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:34:16,448 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 06:43:31,531 | train | INFO | Write row 18
+2021-10-06 06:43:32,372 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:43:32,373 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 06:52:44,364 | train | INFO | Write row 19
+2021-10-06 06:52:45,228 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 06:52:45,229 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 07:01:59,598 | train | INFO | Write row 20
+2021-10-06 07:02:01,276 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 07:02:01,277 | train | INFO | Update best record row 21, checkpoints 0.059426374322966255 -> 0.05206217124218369
+2021-10-06 07:02:02,036 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:02:02,036 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.059426374322966255 -> 0.05206217124218369
+2021-10-06 07:02:03,791 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 07:11:18,451 | train | INFO | Write row 21
+2021-10-06 07:11:19,183 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:11:19,183 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 07:20:35,450 | train | INFO | Write row 22
+2021-10-06 07:20:36,209 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:20:36,210 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 07:29:50,133 | train | INFO | Write row 23
+2021-10-06 07:29:50,877 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:29:50,878 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 07:39:06,391 | train | INFO | Write row 24
+2021-10-06 07:39:07,125 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:39:07,126 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 07:48:25,261 | train | INFO | Write row 25
+2021-10-06 07:48:26,070 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:48:26,070 | train | INFO | Early stopper, Early stopping counter 5/10
+2021-10-06 07:57:39,696 | train | INFO | Write row 26
+2021-10-06 07:57:40,432 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 07:57:40,433 | train | INFO | Early stopper, Early stopping counter 6/10
+2021-10-06 08:06:56,298 | train | INFO | Write row 27
+2021-10-06 08:06:57,186 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:06:57,187 | train | INFO | Early stopper, Early stopping counter 7/10
+2021-10-06 08:16:16,683 | train | INFO | Write row 28
+2021-10-06 08:16:17,432 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:16:17,433 | train | INFO | Early stopper, Early stopping counter 8/10
+2021-10-06 08:25:33,392 | train | INFO | Write row 29
+2021-10-06 08:25:34,963 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 08:25:34,964 | train | INFO | Update best record row 30, checkpoints 0.05206217124218369 -> 0.05035431528094021
+2021-10-06 08:25:35,661 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:25:35,661 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.05206217124218369 -> 0.05035431528094021
+2021-10-06 08:25:37,369 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 08:34:56,246 | train | INFO | Write row 30
+2021-10-06 08:34:57,008 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:34:57,009 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 08:44:13,241 | train | INFO | Write row 31
+2021-10-06 08:44:14,031 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:44:14,032 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 08:53:30,116 | train | INFO | Write row 32
+2021-10-06 08:53:30,870 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 08:53:30,871 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 09:02:43,126 | train | INFO | Write row 33
+2021-10-06 09:02:43,845 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:02:43,846 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 09:11:56,605 | train | INFO | Write row 34
+2021-10-06 09:11:57,437 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:11:57,438 | train | INFO | Early stopper, Early stopping counter 5/10
+2021-10-06 09:21:11,075 | train | INFO | Write row 35
+2021-10-06 09:21:12,635 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 09:21:12,636 | train | INFO | Update best record row 36, checkpoints 0.05035431528094021 -> 0.048335115405016935
+2021-10-06 09:21:13,365 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:21:13,365 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.05035431528094021 -> 0.048335115405016935
+2021-10-06 09:21:14,928 | train | INFO | Model saved: F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631\best.pt
+2021-10-06 09:30:27,281 | train | INFO | Write row 36
+2021-10-06 09:30:28,191 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:30:28,192 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 09:40:58,341 | train | INFO | Write row 37
+2021-10-06 09:40:59,329 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:40:59,329 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 09:51:34,405 | train | INFO | Write row 38
+2021-10-06 09:51:35,353 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 09:51:35,354 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 10:01:58,293 | train | INFO | Write row 39
+2021-10-06 10:01:59,228 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 10:01:59,229 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 10:12:21,180 | train | INFO | Write row 40
+2021-10-06 10:12:22,345 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 10:12:22,346 | train | INFO | Early stopper, Early stopping counter 5/10
+2021-10-06 10:22:50,518 | train | INFO | Write row 41
+2021-10-06 10:22:51,425 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 10:22:51,426 | train | INFO | Early stopper, Early stopping counter 6/10
+2021-10-06 10:33:14,048 | train | INFO | Write row 42
+2021-10-06 10:33:14,958 | train | INFO | Save performance plot F:\aifarm_baseline\results\train\timm_tf_efficientnetv2_m_20211006034631
+2021-10-06 10:33:14,958 | train | INFO | Early stopper, Early stopping counter 7/10

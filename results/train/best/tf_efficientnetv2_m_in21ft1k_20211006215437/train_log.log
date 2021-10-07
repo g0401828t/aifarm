@@ -1,0 +1,107 @@
+2021-10-06 21:58:10,344 | train | INFO | Write row 0
+2021-10-06 21:58:11,379 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\model.pt
+2021-10-06 21:58:11,379 | train | INFO | Update best record row 1, checkpoints inf -> 0.09280773082947383
+2021-10-06 21:58:11,840 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 21:58:12,872 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:01:40,578 | train | INFO | Write row 1
+2021-10-06 22:01:41,659 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:01:41,659 | train | INFO | Update best record row 2, checkpoints 0.09280773082947383 -> 0.04561107027925467
+2021-10-06 22:01:42,032 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:01:42,032 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.09280773082947383 -> 0.04561107027925467
+2021-10-06 22:01:43,176 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:05:10,828 | train | INFO | Write row 2
+2021-10-06 22:05:11,879 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:05:11,880 | train | INFO | Update best record row 3, checkpoints 0.04561107027925467 -> 0.041422840702664894
+2021-10-06 22:05:12,298 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:05:12,299 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.04561107027925467 -> 0.041422840702664894
+2021-10-06 22:05:13,380 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:08:41,436 | train | INFO | Write row 3
+2021-10-06 22:08:41,830 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:08:41,831 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 22:12:10,595 | train | INFO | Write row 4
+2021-10-06 22:12:11,682 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:12:11,683 | train | INFO | Update best record row 5, checkpoints 0.041422840702664894 -> 0.02399639655739647
+2021-10-06 22:12:12,090 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:12:12,091 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.041422840702664894 -> 0.02399639655739647
+2021-10-06 22:12:13,127 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:15:40,961 | train | INFO | Write row 5
+2021-10-06 22:15:41,349 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:15:41,350 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 22:19:09,237 | train | INFO | Write row 6
+2021-10-06 22:19:09,655 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:19:09,656 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 22:22:37,666 | train | INFO | Write row 7
+2021-10-06 22:22:38,061 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:22:38,062 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 22:26:06,218 | train | INFO | Write row 8
+2021-10-06 22:26:06,620 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:26:06,621 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 22:29:34,793 | train | INFO | Write row 9
+2021-10-06 22:29:35,849 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:29:35,849 | train | INFO | Update best record row 10, checkpoints 0.02399639655739647 -> 0.021758454086281135
+2021-10-06 22:29:36,252 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:29:36,253 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.02399639655739647 -> 0.021758454086281135
+2021-10-06 22:29:37,293 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:33:05,670 | train | INFO | Write row 10
+2021-10-06 22:33:06,707 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:33:06,707 | train | INFO | Update best record row 11, checkpoints 0.021758454086281135 -> 0.016123897838864712
+2021-10-06 22:33:07,188 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:33:07,189 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.021758454086281135 -> 0.016123897838864712
+2021-10-06 22:33:08,233 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:36:36,843 | train | INFO | Write row 11
+2021-10-06 22:36:37,243 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:36:37,244 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 22:40:05,112 | train | INFO | Write row 12
+2021-10-06 22:40:06,142 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:40:06,142 | train | INFO | Update best record row 13, checkpoints 0.016123897838864712 -> 0.013436668950271005
+2021-10-06 22:40:06,550 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:40:06,552 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.016123897838864712 -> 0.013436668950271005
+2021-10-06 22:40:07,597 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:43:35,532 | train | INFO | Write row 13
+2021-10-06 22:43:35,995 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:43:35,996 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 22:47:05,178 | train | INFO | Write row 14
+2021-10-06 22:47:05,579 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:47:05,580 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 22:50:33,719 | train | INFO | Write row 15
+2021-10-06 22:50:34,124 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:50:34,125 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 22:54:02,124 | train | INFO | Write row 16
+2021-10-06 22:54:02,527 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:54:02,528 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 22:57:30,346 | train | INFO | Write row 17
+2021-10-06 22:57:31,363 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 22:57:31,363 | train | INFO | Update best record row 18, checkpoints 0.013436668950271005 -> 0.009579192374603342
+2021-10-06 22:57:31,785 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 22:57:31,786 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.013436668950271005 -> 0.009579192374603342
+2021-10-06 22:57:32,875 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437\best.pt
+2021-10-06 23:01:01,572 | train | INFO | Write row 18
+2021-10-06 23:01:01,968 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:01:01,969 | train | INFO | Early stopper, Early stopping counter 1/10
+2021-10-06 23:04:32,837 | train | INFO | Write row 19
+2021-10-06 23:04:33,256 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:04:33,256 | train | INFO | Early stopper, Early stopping counter 2/10
+2021-10-06 23:08:01,267 | train | INFO | Write row 20
+2021-10-06 23:08:01,681 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:08:01,682 | train | INFO | Early stopper, Early stopping counter 3/10
+2021-10-06 23:11:30,117 | train | INFO | Write row 21
+2021-10-06 23:11:30,528 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:11:30,529 | train | INFO | Early stopper, Early stopping counter 4/10
+2021-10-06 23:14:58,420 | train | INFO | Write row 22
+2021-10-06 23:14:58,806 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:14:58,807 | train | INFO | Early stopper, Early stopping counter 5/10
+2021-10-06 23:18:28,101 | train | INFO | Write row 23
+2021-10-06 23:18:28,507 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:18:28,508 | train | INFO | Early stopper, Early stopping counter 6/10
+2021-10-06 23:21:56,880 | train | INFO | Write row 24
+2021-10-06 23:21:57,276 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:21:57,277 | train | INFO | Early stopper, Early stopping counter 7/10
+2021-10-06 23:25:25,626 | train | INFO | Write row 25
+2021-10-06 23:25:26,017 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:25:26,018 | train | INFO | Early stopper, Early stopping counter 8/10
+2021-10-06 23:28:54,324 | train | INFO | Write row 26
+2021-10-06 23:28:54,733 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:28:54,734 | train | INFO | Early stopper, Early stopping counter 9/10
+2021-10-06 23:32:22,630 | train | INFO | Write row 27
+2021-10-06 23:32:23,027 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\tf_efficientnetv2_m_in21ft1k_20211006215437
+2021-10-06 23:32:23,028 | train | INFO | Early stopper, Early stopping counter 10/10

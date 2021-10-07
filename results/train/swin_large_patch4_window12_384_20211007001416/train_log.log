@@ -1,0 +1,86 @@
+2021-10-07 00:41:46,404 | train | INFO | Write row 0
+2021-10-07 00:41:51,256 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\model.pt
+2021-10-07 00:41:51,257 | train | INFO | Update best record row 1, checkpoints inf -> 0.08196631725594766
+2021-10-07 00:41:51,716 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 00:41:57,848 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 01:09:25,340 | train | INFO | Write row 1
+2021-10-07 01:09:30,537 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 01:09:30,538 | train | INFO | Update best record row 2, checkpoints 0.08196631725594766 -> 0.03492626466111295
+2021-10-07 01:09:30,924 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 01:09:30,925 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.08196631725594766 -> 0.03492626466111295
+2021-10-07 01:09:35,708 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 01:36:52,280 | train | INFO | Write row 2
+2021-10-07 01:36:52,688 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 01:36:52,689 | train | INFO | Early stopper, Early stopping counter 1/6
+2021-10-07 02:04:08,993 | train | INFO | Write row 3
+2021-10-07 02:04:09,375 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 02:04:09,376 | train | INFO | Early stopper, Early stopping counter 2/6
+2021-10-07 02:31:26,547 | train | INFO | Write row 4
+2021-10-07 02:31:26,938 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 02:31:26,938 | train | INFO | Early stopper, Early stopping counter 3/6
+2021-10-07 02:58:44,197 | train | INFO | Write row 5
+2021-10-07 02:58:48,163 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 02:58:48,164 | train | INFO | Update best record row 6, checkpoints 0.03492626466111295 -> 0.029227985034807072
+2021-10-07 02:58:48,548 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 02:58:48,550 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.03492626466111295 -> 0.029227985034807072
+2021-10-07 02:58:52,516 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 03:26:09,811 | train | INFO | Write row 6
+2021-10-07 03:26:10,274 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 03:26:10,275 | train | INFO | Early stopper, Early stopping counter 1/6
+2021-10-07 03:53:27,541 | train | INFO | Write row 7
+2021-10-07 03:53:32,490 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 03:53:32,490 | train | INFO | Update best record row 8, checkpoints 0.029227985034807072 -> 0.02052486831115031
+2021-10-07 03:53:32,876 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 03:53:32,877 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.029227985034807072 -> 0.02052486831115031
+2021-10-07 03:53:37,578 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 04:20:56,427 | train | INFO | Write row 8
+2021-10-07 04:20:56,817 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 04:20:56,818 | train | INFO | Early stopper, Early stopping counter 1/6
+2021-10-07 04:48:14,461 | train | INFO | Write row 9
+2021-10-07 04:48:14,847 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 04:48:14,848 | train | INFO | Early stopper, Early stopping counter 2/6
+2021-10-07 05:15:32,011 | train | INFO | Write row 10
+2021-10-07 05:15:37,004 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 05:15:37,004 | train | INFO | Update best record row 11, checkpoints 0.02052486831115031 -> 0.015321061578790072
+2021-10-07 05:15:37,402 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 05:15:37,403 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.02052486831115031 -> 0.015321061578790072
+2021-10-07 05:15:42,255 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 05:42:59,362 | train | INFO | Write row 11
+2021-10-07 05:43:03,437 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 05:43:03,437 | train | INFO | Update best record row 12, checkpoints 0.015321061578790072 -> 0.00848411643319117
+2021-10-07 05:43:03,827 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 05:43:03,828 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.015321061578790072 -> 0.00848411643319117
+2021-10-07 05:43:08,288 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 06:10:24,222 | train | INFO | Write row 12
+2021-10-07 06:10:29,100 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 06:10:29,101 | train | INFO | Update best record row 13, checkpoints 0.00848411643319117 -> 0.007605786854779908
+2021-10-07 06:10:29,487 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 06:10:29,488 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.00848411643319117 -> 0.007605786854779908
+2021-10-07 06:10:34,286 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 06:37:49,849 | train | INFO | Write row 13
+2021-10-07 06:37:54,958 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 06:37:54,959 | train | INFO | Update best record row 14, checkpoints 0.007605786854779908 -> 0.007480364598623406
+2021-10-07 06:37:55,354 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 06:37:55,355 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.007605786854779908 -> 0.007480364598623406
+2021-10-07 06:38:00,021 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 07:05:14,534 | train | INFO | Write row 14
+2021-10-07 07:05:14,938 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 07:05:14,940 | train | INFO | Early stopper, Early stopping counter 1/6
+2021-10-07 07:32:31,261 | train | INFO | Write row 15
+2021-10-07 07:32:31,664 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 07:32:31,664 | train | INFO | Early stopper, Early stopping counter 2/6
+2021-10-07 07:59:49,811 | train | INFO | Write row 16
+2021-10-07 07:59:53,870 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 07:59:53,870 | train | INFO | Update best record row 17, checkpoints 0.007480364598623406 -> 0.0051950757721808925
+2021-10-07 07:59:54,273 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 07:59:54,274 | train | INFO | Early stopper, counter reset 0, Validation loss decreased 0.007480364598623406 -> 0.0051950757721808925
+2021-10-07 07:59:58,086 | train | INFO | Model saved: C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416\best.pt
+2021-10-07 08:27:16,829 | train | INFO | Write row 17
+2021-10-07 08:27:17,252 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 08:27:17,253 | train | INFO | Early stopper, Early stopping counter 1/6
+2021-10-07 08:54:37,170 | train | INFO | Write row 18
+2021-10-07 08:54:37,570 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 08:54:37,571 | train | INFO | Early stopper, Early stopping counter 2/6
+2021-10-07 09:21:54,421 | train | INFO | Write row 19
+2021-10-07 09:21:54,815 | train | INFO | Save performance plot C:\Users\dg\Desktop\aifarm\aifarm\results\train\swin_large_patch4_window12_384_20211007001416
+2021-10-07 09:21:54,816 | train | INFO | Early stopper, Early stopping counter 3/6
