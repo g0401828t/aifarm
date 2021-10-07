@@ -96,11 +96,9 @@ if __name__ == '__main__':
     
     # Load dataset & dataloader
     train_dataset = CustomDataset(data_dir=DATA_DIR, mode='train', input_shape=INPUT_SHAPE)
-#     validation_dataset = CustomDataset(data_dir=DATA_DIR, mode='val', input_shape=INPUT_SHAPE)
-#     test_dataset = CustomDataset(data_dir=DATA_DIR, mode='test', input_shape=INPUT_SHAPE)
     ratio = 0.8
     lengths = [int(len(train_dataset)*ratio), len(train_dataset)-int(len(train_dataset)*(ratio))]
-    train_set, val_set = torch.utils.data.random_split(train_dataset, lengths)
+    train_set, val_set = torch.utils.data.random_split(train_dataset, lengths)   # random split the dataset into trainset & valset
     train_data = MyLazyDataset(train_set, input_shape=INPUT_SHAPE, mode="train")
     val_data = MyLazyDataset(val_set, input_shape=INPUT_SHAPE, mode="val")
 
@@ -110,9 +108,8 @@ if __name__ == '__main__':
     validation_dataloader = DataLoader(val_data, batch_size=BATCH_SIZE, shuffle=True,
         num_workers=8,
         pin_memory=True,)
-#     test_dataloader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
 
-#     print('Train set samples:',len(train_dataset),  'Val set samples:', len(validation_dataset), 'Test set samples:', len(test_dataset))
+    # check lenghts of data loader (train, val)
     print('Train set samples before split:',len(train_dataset))    
     print('Train set samples:',len(train_data))    
     print('Validation set samples:',len(val_data))
@@ -122,13 +119,7 @@ if __name__ == '__main__':
     model = get_my_model(model_name=MODEL, num_classes = 10)
     model.to(device)
 
-    # # Set optimizer, scheduler, loss function, metric function
-    # optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
-    # scheduler =  optim.lr_scheduler.OneCycleLR(optimizer=optimizer, pct_start=0.1, div_factor=1e5, max_lr=0.0001, epochs=EPOCHS, steps_per_epoch=len(train_dataloader))
-    # criterion = nn.CrossEntropyLoss()
-    # metric_fn = get_metric_fn
-
-
+    # # # # # # # Set optimizer, scheduler, loss function, metric function
     ## Optimizer
     if OPTIMIZER == "sgd":
         optimizer = optim.SGD(model.parameters(), lr=LEARNING_RATE, momentum=0.9, weight_decay=WEIGHT_DECAY)
@@ -136,7 +127,7 @@ if __name__ == '__main__':
         optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY)
 
     ## Scheduler
-    if SCHEDULER == "msl":
+    if SCHEDULER == "msl":  # => mainly used
         hp_lr_decay_ratio = 0.2
         scheduler = optim.lr_scheduler.MultiStepLR(
             optimizer,
@@ -153,13 +144,16 @@ if __name__ == '__main__':
         )
     if SCHEDULER == "cos":
         scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=EPOCHS)
-    if SCHEDULER == "plateu":
+    if SCHEDULER == "plateu": 
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode="min", patience=5, factor=0.5)
 
     ## Loss function
     if LOSS_FN == "ce":
+        # Cross Entropy Loss
         criterion = nn.CrossEntropyLoss()
-    if LOSS_FN == "w_ce":
+    if LOSS_FN == "w_ce":          
+        # Weight Cross Entropy Loss
+        # Use the calculated num of img in trainset for cross entropy weights.
         _, num_imgs_class  = train_dataset.data_loader()
         num_imgs_class = torch.FloatTensor(num_imgs_class)
         print("num of imgs for classes:", num_imgs_class)
@@ -169,16 +163,12 @@ if __name__ == '__main__':
         class_weights = torch.exp(class_weights)
         class_weights = class_weights.to(device)
         print("weights for classes:", class_weights)
-        # percentage for each classes
-        # [D01: 0, D04: 1, D05: 2, D07: 3, D08: 4, D09: 5, H: 6, P03: 7, P05: 8, R01: 9]
-        # [D01: 0.013, D04: 0.044, D05: 0.119, D07: 0.005, D08: 0.025, D09: 0.003, H: 0.574, P03: 0.193, P05: 0.008, R01: 0.016]
-        # class_percentage = torch.FloatTensor([0.013, 0.044, 0.119, 0.005, 0.025, 0.003, 0.574, 0.193, 0.008, 0.016])
-        # class_weights = 1.0 /class_percentage
-        # class_weights = class_weights / class_weights.sum()
         criterion = nn.CrossEntropyLoss(weight=class_weights)
     if LOSS_FN == "focal_loss":
+        # Focal Loss for imbalanced class
         criterion = FocalLoss(alpha=1, gamma=2, reduce=True)
     if LOSS_FN == "w_focal_loss":
+        # Combine Focal Loss & Weight Cross Entropy Loss
         _, num_imgs_class  = train_dataset.data_loader()
         num_imgs_class = torch.FloatTensor(num_imgs_class)
         print("num of imgs for classes:", num_imgs_class)
@@ -190,12 +180,11 @@ if __name__ == '__main__':
         print("weights for classes:", class_weights)
         criterion = FocalLoss(alpha=1, gamma=2, weight=class_weights, reduce=True)
 
-
     ## Metric Function
     metric_fn = get_metric_fn
 
-
-
+    
+    # # # # # # # Set trainer, Earlystopper
     # Set trainer
     trainer = Trainer(criterion, model, device, metric_fn, optimizer, scheduler, logger=system_logger)
 

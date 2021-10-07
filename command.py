@@ -17,16 +17,19 @@ class command():
 command_list = [
 ###
 
+## Best
+"python train.py --yml train_config_best1",  # tf_efficientnetv2_m_in21ft1k, bathsize 32 => pub test: 99.03
+"python train.py --yml train_config_best2",  # tf_efficientnetv2_l_in21ft1k, bathsize 16 => pub test: 99.22
+
+
 ## Done
 # "python train.py --yml train_config",  # timm_tf_efficientnetv2_m, bathsize 16 => pub test: 97.19
 # "python train.py --yml train_config1",  # tf_efficientnetv2_m_in21ft1k, bathsize 16, w_focal_loss => dg
 
 ## Progress
 
-# "python train.py --yml train_config4",  # tf_efficientnet_b6_ns, bathsize 16  ==> 99.xx
-
-# "python train.py --yml train_config2",  # tf_efficientnetv2_l_in21ft1k, bathsize 8  ==> 99.xx
-
+# "python train.py --yml train_config4",  # tf_efficientnet_b6_ns, bathsize 16  ==> 99.8 99.2
+# "python train.py --yml train_config2",  # tf_efficientnetv2_l_in21ft1k, bathsize 8  ==> 99.7 99.2
 # "python train.py --yml train_config3",  # swin_large_patch4_window7_224, bathsize 8  => 97.xx
 
 
