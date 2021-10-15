@@ -1,5 +1,5 @@
 DIRECTORY:
-  data: '../data/test'
+  data: '../dataset/Tomato/test'
   model: "tf_efficientnetv2_l_in21ft1k_20211007123012" 
 
 MODEL: "tf_efficientnetv2_l_in21ft1k"

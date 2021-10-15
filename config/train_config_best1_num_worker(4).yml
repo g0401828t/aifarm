@@ -1,0 +1,40 @@
+SEED:
+  random_seed: 42
+DATALOADER:
+  num_workers: 4
+  shuffle: true
+  pin_memory: true
+  drop_last: false
+TRAIN:
+  input_shape: 224
+  num_epochs: 1
+  batch_size: 32
+  learning_rate: 1e-4
+  early_stopping_patience: 10
+  model: tf_efficientnetv2_m_in21ft1k
+  optimizer: adam
+  scheduler: msl
+  momentum: null
+  weight_decay: 5.0e-05
+  loss_function: w_focal_loss
+  metric_function: null
+PERFORMANCE_RECORD:
+  column_list:
+  - train_serial
+  - train_timestamp
+  - model_str
+  - optimizer_str
+  - loss_function_str
+  - metric_function_str
+  - early_stopping_patience
+  - batch_size
+  - epoch
+  - learning_rate
+  - momentum
+  - random_seed
+  - epoch_index
+  - train_loss
+  - validation_loss
+  - train_score
+  - validation_score
+  - elapsed_time

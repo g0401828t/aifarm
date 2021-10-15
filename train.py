@@ -44,7 +44,7 @@ DEBUG = False
 # CONFIG
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 ROOT_PROJECT_DIR = os.path.dirname(PROJECT_DIR)
-DATA_DIR = '../data'
+DATA_DIR = '../dataset/Tomato'
 TRAIN_CONFIG_PATH = os.path.join(PROJECT_DIR, 'config/', args.yml + '.yml')
 config = load_yaml(TRAIN_CONFIG_PATH)
 
@@ -65,6 +65,7 @@ LOSS_FN = config['TRAIN']['loss_function']
 METRIC_FN = config['TRAIN']['metric_function']
 INPUT_SHAPE = config['TRAIN']['input_shape']
 INPUT_SHAPE = tuple((INPUT_SHAPE,INPUT_SHAPE))
+NUM_WORKER = config['DATALOADER']['num_workers']
 
 # TRAIN SERIAL
 KST = timezone(timedelta(hours=9))
@@ -103,10 +104,10 @@ if __name__ == '__main__':
     val_data = MyLazyDataset(val_set, input_shape=INPUT_SHAPE, mode="val")
 
     train_dataloader = DataLoader(train_data, batch_size=BATCH_SIZE, shuffle=True,
-        num_workers=8,
+        num_workers=NUM_WORKER,
         pin_memory=True,)
     validation_dataloader = DataLoader(val_data, batch_size=BATCH_SIZE, shuffle=True,
-        num_workers=8,
+        num_workers=NUM_WORKER,
         pin_memory=True,)
 
     # check lenghts of data loader (train, val)

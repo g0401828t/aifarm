@@ -17,9 +17,21 @@ class command():
 command_list = [
 ###
 
+# ## num_worker test
+"python train.py --yml train_config_best1_num_worker(1)", 
+# "python train.py --yml train_config_best1_num_worker(2)", 
+# "python train.py --yml train_config_best1_num_worker(3)", 
+# "python train.py --yml train_config_best1_num_worker(4)", 
+# "python train.py --yml train_config_best1_num_worker(5)", 
+# "python train.py --yml train_config_best1_num_worker(6)", 
+# "python train.py --yml train_config_best1_num_worker(7)", 
+# "python train.py --yml train_config_best1_num_worker(8)", 
+
+
+
 ## Best
-"python train.py --yml train_config_best1",  # tf_efficientnetv2_m_in21ft1k, bathsize 32 => pub test: 99.03
-"python train.py --yml train_config_best2",  # tf_efficientnetv2_l_in21ft1k, bathsize 16 => pub test: 99.22
+# "python train.py --yml train_config_best1",  # tf_efficientnetv2_m_in21ft1k, bathsize 32 => pub test: 99.03
+# "python train.py --yml train_config_best2",  # tf_efficientnetv2_l_in21ft1k, bathsize 16 => pub test: 99.22
 
 
 ## Done
