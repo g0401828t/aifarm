@@ -107,13 +107,14 @@
 │   ├── predict.py
 │   ├── README.md
 │   └── train.py
-└── data
-    ├── test
-    └── train
-        ├──Tomato_D01
-        ├──Tomato_D01
-        ...
-        └──Tomato_R01
+└── dataset
+    └── Tomato
+        ├── test
+        └── train
+            ├──Tomato_D01
+            ├──Tomato_D01
+            ...
+            └──Tomato_R01
 ```
 
 ## Train Process.
